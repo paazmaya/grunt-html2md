@@ -5,10 +5,8 @@
  * Copyright (c) 2013 Juga Paazmaya
  * Licensed under the MIT license.
  */
-
-'use strict';
-
 module.exports = function(grunt) {
+  'use strict';
 
   // Project configuration.
   grunt.initConfig({
@@ -16,42 +14,31 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'tasks/*.js',
-        '<%= nodeunit.tests %>',
+        '<%= nodeunit.tests %>'
       ],
       options: {
-        jshintrc: '.jshintrc',
+        jshintrc: '.jshintrc'
       },
     },
 
     // Before generating any new files, remove any previously-created files.
     clean: {
-      tests: ['tmp'],
+      tests: ['test/fixtures/default.md']
     },
 
     // Configuration to be run (and then tested).
     html2md: {
-      default_options: {
-        options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!',
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
+      main: {
+        files: [
+          'test/fixtures/default.html'
+        ]
+      }
     },
 
     // Unit tests.
     nodeunit: {
-      tests: ['test/*_test.js'],
-    },
+      tests: ['test/*_test.js']
+    }
 
   });
 

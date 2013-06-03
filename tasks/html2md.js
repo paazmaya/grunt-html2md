@@ -5,49 +5,38 @@
  * Copyright (c) 2013 Juga Paazmaya
  * Licensed under the MIT license.
  */
-
-'use strict';
-
-module.exports = function(grunt) {
-
-  // Please see the Grunt documentation for more information regarding task
-  // creation: http://gruntjs.com/creating-tasks
+module.exports = function (grunt) {
+  'use strict';
 
   grunt.registerMultiTask('html2md', 'Transform HTML files to Markdown', function() {
-    // Merge task-specific and/or target-specific options with these defaults.
-    var options = this.options({
-      punctuation: '.',
-      separator: ', '
-    });
     
-    var toMarkdown = require('to-markdown').toMarkdown;
+    //var toMarkdown = require('to-markdown').toMarkdown;
 
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
     
-    
-      // Concat specified files.
-      var src = f.src.filter(function(filepath) {
+      f.src.forEach(function(filepath) {
         // Warn on and remove invalid source files (if nonull was set).
-        if (!grunt.file.exists(filepath)) {
+        if (!grunt.file.exists(filepath) || !grunt.file.isFile(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
-          return false;
-        } else {
-          return true;
         }
-      }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
-      }).join(grunt.util.normalizelf(options.separator));
+        else {
+          // Read file source.
+          //var html = grunt.file.read(filepath);
+          
+          // Convert
+          //var md = toMarkdown(html);
+        
+          // Replace suffix of of src to create dest
+          var dest = filepath.substring(0, filepath.lastIndexOf('.')) + '.md';
 
-      // Handle options.
-      src += options.punctuation;
+          // Write the destination file.
+          //grunt.file.write(dest, md);
 
-      // Write the destination file.
-      grunt.file.write(f.dest, src);
-
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
+          // Print a success message.
+          grunt.log.writeln('File "' + dest + '" created.');
+        }
+      });
     });
   });
 
