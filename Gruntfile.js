@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     html2md: {
       main: {
-        files: [
+        src: [
           'test/fixtures/default.html'
         ]
       }
