@@ -10,7 +10,10 @@ module.exports = function (grunt) {
 
   grunt.registerMultiTask('html2md', 'Transform HTML files to Markdown', function() {
     
-    var toMarkdown = require('to-markdown').toMarkdown;
+    var toMarkdown = require('to-markdown').toMarkdown,
+        options = this.options({
+          encoding: 'utf8'
+        });
     
     // Iterate over all specified file groups.
     this.filesSrc.forEach(function(filepath) {
@@ -30,7 +33,7 @@ module.exports = function (grunt) {
         var dest = filepath.substring(0, filepath.lastIndexOf('.')) + '.md';
 
         // Write the destination file.
-        grunt.file.write(dest, md);
+        grunt.file.write(dest, md, options);
 
         // Print a success message.
         grunt.log.writeln('File "' + dest + '" created.');

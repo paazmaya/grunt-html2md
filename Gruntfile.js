@@ -29,6 +29,9 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     html2md: {
       main: {
+        options: {
+          encoding: 'ascii'
+        },
         src: [
           'test/fixtures/default.html'
         ]

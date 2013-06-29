@@ -40,7 +40,7 @@ into `grunt.initConfig()`.
 grunt.initConfig({
   html2md: {
     your_target: {
-      // Target-specific source file lists and/or options go here.
+      // Target-specific source file lists and/or file write options go here.
     },
   },
 })
@@ -49,12 +49,15 @@ grunt.initConfig({
 
 ### Options
 
+Options are passed directly to 
+[`grunt.file.write`](https://github.com/gruntjs/grunt/wiki/grunt.file) method.
+
 #### options.encoding
 
 Type: `String`
 Default value: `'utf8'`
 
-The file encoding used for saving the resulting Markdown files. Not used in the current version.
+The file encoding used for saving the resulting Markdown files.
 
 
 ### Usage Examples
@@ -69,8 +72,10 @@ as the given source file.
 ```js
 grunt.initConfig({
   html2md: {
-    options: {},
     main: {
+      options: {
+        encoding: 'utf8'
+      },
       src: [
         'src/*.html',
         'legacy/*.html'
