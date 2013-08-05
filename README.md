@@ -2,6 +2,7 @@
 
 > Transform HTML files to Markdown in a Grunt task
 
+[![Build Status](https://travis-ci.org/paazmaya/grunt-html2md.png?branch=master)](https://travis-ci.org/paazmaya/grunt-html2md)
 
 ## Getting Started
 
