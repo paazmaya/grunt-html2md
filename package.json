@@ -1,6 +1,6 @@
 {
   "name": "grunt-html2md",
-  "description": "Transform HTML files to Markdown, and back",
+  "description": "Transform HTML files to Markdown",
   "version": "0.1.0",
   "homepage": "https://github.com/paazmaya/grunt-html2md",
   "author": {
@@ -23,7 +23,7 @@
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "scripts": {
     "test": "grunt test"
@@ -34,8 +34,11 @@
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-nodeunit": "~0.2.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
   },
   "keywords": [
     "html",
