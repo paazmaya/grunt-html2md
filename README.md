@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/paazmaya/grunt-html2md.png?branch=master)](https://travis-ci.org/paazmaya/grunt-html2md)
 
+[![Dependency Status](https://gemnasium.com/paazmaya/grunt-html2md.png)](https://gemnasium.com/paazmaya/grunt-html2md)
+
 ## Getting Started
 
 This Grunt task plugin transforms the given HTML files to the 
