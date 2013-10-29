@@ -99,3 +99,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 ## Release History
 
 * 2013-07-23    v0.1.0    Initial release
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-html2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
