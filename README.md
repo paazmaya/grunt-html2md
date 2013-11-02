@@ -3,8 +3,9 @@
 > Transform HTML files to Markdown in a Grunt task
 
 [![Build Status](https://travis-ci.org/paazmaya/grunt-html2md.png?branch=master)](https://travis-ci.org/paazmaya/grunt-html2md)
-
+[![Code Climate](https://codeclimate.com/github/paazmaya/grunt-html2md.png)](https://codeclimate.com/github/paazmaya/grunt-html2md)
 [![Dependency Status](https://gemnasium.com/paazmaya/grunt-html2md.png)](https://gemnasium.com/paazmaya/grunt-html2md)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-html2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## Getting Started
 
@@ -101,5 +102,4 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 * 2013-07-23    v0.1.0    Initial release
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-html2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
