@@ -21,6 +21,11 @@
       "url": "https://github.com/paazmaya/grunt-html2md/blob/master/LICENSE-MIT"
     }
   ],
+  "files": [
+    "LICENSE-MIT",
+    "tasks",
+    "README.md"
+  ],
   "main": "Gruntfile.js",
   "engines": {
     "node": ">= 0.10.0"
