@@ -10,10 +10,10 @@ module.exports = function (grunt) {
 
   grunt.registerMultiTask('html2md', 'Transform HTML files to Markdown', function() {
     
-    var toMarkdown = require('to-markdown').toMarkdown,
-        options = this.options({
-          encoding: 'utf8'
-        });
+    var toMarkdown = require('to-markdown').toMarkdown;
+    var options = this.options({
+      encoding: 'utf8'
+    });
     
     // Iterate over all specified file groups.
     this.filesSrc.forEach(function(filepath) {
