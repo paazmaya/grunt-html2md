@@ -103,4 +103,9 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 * 2013-07-23    v0.1.0    Initial release
 
 
+## License
+
+Copyright (c) 2013 Juga Paazmaya <olavic@gmail.com>
+
+Licensed under the [MIT license](LICENSE-MIT).
 
