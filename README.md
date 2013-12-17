@@ -6,6 +6,7 @@
 [![Code Climate](https://codeclimate.com/github/paazmaya/grunt-html2md.png)](https://codeclimate.com/github/paazmaya/grunt-html2md)
 [![Dependency Status](https://gemnasium.com/paazmaya/grunt-html2md.png)](https://gemnasium.com/paazmaya/grunt-html2md)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-html2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Getting Started
 
