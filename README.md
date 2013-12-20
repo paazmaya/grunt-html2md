@@ -100,6 +100,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+* 2013-12-20    v0.1.1    Linting with eslint instead of JSHint for better coverage
 * 2013-07-23    v0.1.0    Initial release
 
 
