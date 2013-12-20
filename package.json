@@ -34,7 +34,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.2",
     "to-markdown": "~0.0.1"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "grunt-contrib-nodeunit": "~0.2.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.2"
   },
   "keywords": [
     "html",
