@@ -38,7 +38,7 @@
     "to-markdown": "^0.0.1"
   },
   "devDependencies": {
-    "grunt-eslint": "^0.2",
+    "grunt-eslint": "^0.3",
     "grunt-contrib-clean": "^0.5",
     "grunt-contrib-nodeunit": "^0.2"
   },
