@@ -38,9 +38,10 @@
     "to-markdown": "^0.0.1"
   },
   "devDependencies": {
+    "grunt-cli": "^0.1.13",
     "grunt-eslint": "^0.3",
     "grunt-contrib-clean": "^0.5",
-    "grunt-contrib-nodeunit": "^0.2"
+    "grunt-contrib-nodeunit": "^0.3"
   },
   "peerDependencies": {
     "grunt": "^0.4"
