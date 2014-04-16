@@ -8,6 +8,7 @@
 'use strict';
   
 module.exports = function(grunt) {
+  require('time-grunt')(grunt); // Must be first item
 
   // Project configuration.
   grunt.initConfig({
