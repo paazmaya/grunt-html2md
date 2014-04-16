@@ -48,9 +48,7 @@ module.exports = function(grunt) {
 
   grunt.loadTasks('tasks');
 
-  grunt.loadNpmTasks('grunt-eslint');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-nodeunit');
+  require('jit-grunt')(grunt);
 
   grunt.registerTask('test', ['clean', 'eslint', 'html2md', 'nodeunit']);
 
