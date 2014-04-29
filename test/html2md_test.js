@@ -21,7 +21,6 @@ var grunt = require('grunt');
     test.doesNotThrow(block, [error], [message])
     test.ifError(value)
 */
-
 exports.html2md = {
   setUp: function(done) {
     // setup here if necessary

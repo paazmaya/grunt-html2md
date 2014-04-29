@@ -97,6 +97,13 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. 
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
+## Testing
+
+Unit tests are done with [Nodeunit](https://github.com/caolan/nodeunit/ "Easy unit testing in node.js and the browser, based on the assert module").
+
+```sh
+npm install -g venus
+```
 
 ## Release History
 
