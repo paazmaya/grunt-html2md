@@ -7,7 +7,7 @@
  */
 'use strict';
   
-module.exports = function(grunt) {
+module.exports = function gruntConf(grunt) {
   require('time-grunt')(grunt); // Must be first item
 
   // Project configuration.
