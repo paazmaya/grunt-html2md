@@ -96,7 +96,7 @@
     "no-warning-comments": 2,
     "no-with": 2,
     "no-wrap-func": 2,
-    "no-yoda": 2,
+    "yoda": "never",
     "one-var": 0,
     "quote-props": 0,
     "quotes": [2, "single"],
@@ -112,7 +112,12 @@
     "valid-jsdoc": 1,
     "valid-typeof": 2,
     "wrap-iife": 0,
-    "wrap-regex": 0
+    "wrap-regex": 0,
+    
+    "no-undefined": 1,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-trailing-spaces": 2,
+    "eol-last": 1
   },
   "env": {
     "node": true
