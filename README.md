@@ -107,6 +107,7 @@ npm install -g venus
 
 ## Release History
 
+* 2014-08-23    v0.1.2    Dependencies update and general code quality
 * 2013-12-20    v0.1.1    Linting with eslint instead of JSHint for better coverage
 * 2013-07-23    v0.1.0    Initial release
 
