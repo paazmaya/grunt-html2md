@@ -39,10 +39,10 @@
   },
   "devDependencies": {
     "grunt-cli": "^0.1",
-    "grunt-eslint": "~1.1",
+    "grunt-eslint": "~1.2",
     "grunt-contrib-clean": "^0.6",
     "grunt-contrib-nodeunit": "^0.4",
-    "jit-grunt": "^0.8",
+    "jit-grunt": "^0.9",
     "time-grunt": "^1.0"
   },
   "peerDependencies": {
