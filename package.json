@@ -34,19 +34,19 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "grunt": "^0.4",
-    "to-markdown": "^0.0.1"
+    "grunt": "~0.4",
+    "to-markdown": "~0.0.1"
   },
   "devDependencies": {
-    "grunt-cli": "^0.1",
+    "grunt-cli": "~0.1",
     "grunt-eslint": "~2.1",
-    "grunt-contrib-clean": "^0.6",
-    "grunt-contrib-nodeunit": "^0.4",
-    "jit-grunt": "^0.9",
-    "time-grunt": "^1.0"
+    "grunt-contrib-clean": "~0.6",
+    "grunt-contrib-nodeunit": "~0.4",
+    "jit-grunt": "~0.9",
+    "time-grunt": "~1.0"
   },
   "peerDependencies": {
-    "grunt": "^0.4"
+    "grunt": "~0.4"
   },
   "keywords": [
     "html",

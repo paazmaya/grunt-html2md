@@ -2,31 +2,32 @@
 
 > Transform HTML files to Markdown in a Grunt task
 
-[![Build Status](https://travis-ci.org/paazmaya/grunt-html2md.png?branch=master)](https://travis-ci.org/paazmaya/grunt-html2md)
-[![Code Climate](https://codeclimate.com/github/paazmaya/grunt-html2md.png)](https://codeclimate.com/github/paazmaya/grunt-html2md)
-[![Dependency Status](https://gemnasium.com/paazmaya/grunt-html2md.png)](https://gemnasium.com/paazmaya/grunt-html2md)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-html2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[![Build Status](https://img.shields.io/travis/paazmaya/grunt-html2md.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-html2md)
+[![Code Climate](https://img.shields.io/codeclimate/paazmaya/grunt-html2md.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-html2md)
+[![Dependency Status](https://img.shields.io/gemnasium/paazmaya/grunt-html2md.svg?style=flat-square)](https://gemnasium.com/paazmaya/grunt-html2md)
+[![Built with Grunt](http://img.shields.io/badge/Grunt-0.4-blue.svg?style=flat-square)](http://gruntjs.com/)
+[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-html2md/index)](https://github.com/igrigorik/ga-beacon)
+
 
 ## Getting Started
 
-This Grunt task plugin transforms the given HTML files to the 
+This Grunt task plugin transforms the given HTML files to the
 [Markdown format](http://daringfireball.net/projects/markdown/).
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1` and is dependant of 
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1` and is dependant of
 [HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~0.0.1`.
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the 
-[Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to 
-create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and 
-use Grunt plugins. Once you're familiar with that process, 
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the
+[Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to
+create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and
+use Grunt plugins. Once you're familiar with that process,
 you may install this plugin with this command:
 
 ```shell
 npm install grunt-html2md --save-dev
 ```
 
-Once the plugin has been installed, it may be enabled inside your Gruntfile 
+Once the plugin has been installed, it may be enabled inside your Gruntfile
 with this line of JavaScript:
 
 ```js
@@ -38,7 +39,7 @@ grunt.loadNpmTasks('grunt-html2md');
 
 ### Overview
 
-In your project's Gruntfile, add a section named `html2md` to the data object passed 
+In your project's Gruntfile, add a section named `html2md` to the data object passed
 into `grunt.initConfig()`.
 
 ```js
@@ -54,7 +55,7 @@ grunt.initConfig({
 
 ### Options
 
-Options are passed directly to 
+Options are passed directly to
 [`grunt.file.write`](https://github.com/gruntjs/grunt/wiki/grunt.file) method.
 
 #### options.encoding
@@ -93,8 +94,8 @@ grunt.initConfig({
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing coding style. 
-Add unit tests for any new or changed functionality. 
+In lieu of a formal styleguide, take care to maintain the existing coding style.
+Add unit tests for any new or changed functionality.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Testing
