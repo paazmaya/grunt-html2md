@@ -14,7 +14,7 @@ module.exports = function gruntConf(grunt) {
   grunt.initConfig({
     eslint: {
       options: {
-        config: 'eslint.json'
+        config: '.eslintrc'
       },
       target: [
         'Gruntfile.js',
