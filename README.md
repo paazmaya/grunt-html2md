@@ -3,7 +3,7 @@
 > Transform HTML files to Markdown in a Grunt task
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-html2md.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-html2md)
-[![Code Climate](https://img.shields.io/codeclimate/paazmaya/grunt-html2md.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-html2md)
+[![Code Climate](https://img.shields.io/codeclimate/github/paazmaya/grunt-html2md.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-html2md)
 [![Dependency Status](https://img.shields.io/gemnasium/paazmaya/grunt-html2md.svg?style=flat-square)](https://gemnasium.com/paazmaya/grunt-html2md)
 [![Built with Grunt](http://img.shields.io/badge/Grunt-0.4-blue.svg?style=flat-square)](http://gruntjs.com/)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-html2md/index)](https://github.com/igrigorik/ga-beacon)
