@@ -22,11 +22,11 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 exports.html2md = {
-  setUp: function(done) {
+  setUp: function setUp(done) {
     // setup here if necessary
     done();
   },
-  main: function(test) {
+  main: function main(test) {
     test.expect(1);
 
     var actual = grunt.file.read('test/fixtures/default.md');
