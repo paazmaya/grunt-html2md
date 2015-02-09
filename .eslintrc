@@ -13,6 +13,7 @@
     "func-names": 1,
     "func-style": [0, "declaration"],
     "guard-for-in": 1,
+    "indent": [2, 2],
     "handle-callback-err": 2,
     "max-depth": [0, 4],
     "max-len": [0, 120, 4],
