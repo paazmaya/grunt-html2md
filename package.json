@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "grunt": "~0.4",
-    "to-markdown": "~0.0.1"
+    "to-markdown": "~1.1.1"
   },
   "devDependencies": {
     "grunt-cli": "~0.1",
