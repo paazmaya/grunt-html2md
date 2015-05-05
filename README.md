@@ -14,8 +14,8 @@
 This Grunt task plugin transforms the given HTML files to the
 [Markdown format](http://daringfireball.net/projects/markdown/).
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1` and is dependant of
-[HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~0.0.1`.
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4` and handles the transformation via
+[HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~1.2`.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the
 [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to
@@ -23,7 +23,7 @@ create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and
 use Grunt plugins. Once you're familiar with that process,
 you may install this plugin with this command:
 
-```shell
+```sh
 npm install grunt-html2md --save-dev
 ```
 
@@ -55,16 +55,16 @@ grunt.initConfig({
 
 ### Options
 
-Options are passed directly to
-[`grunt.file.write`](https://github.com/gruntjs/grunt/wiki/grunt.file) method.
+Options are passed to the `to-markdown` handler, please see
+https://github.com/domchristie/to-markdown for further details
 
-#### options.encoding
+#### options.gfm
 
-Type: `String`
-Default value: `'utf8'`
+Type: `boolean`
 
-The file encoding used for saving the resulting Markdown files.
+Default value: `false`
 
+> GitHub Flavoured Markdown
 
 ### Usage Examples
 
@@ -79,9 +79,6 @@ as the given source file.
 grunt.initConfig({
   html2md: {
     main: {
-      options: {
-        encoding: 'utf8'
-      },
       src: [
         'src/*.html',
         'legacy/*.html'
@@ -109,6 +106,7 @@ npm install -g venus
 
 ## Release History
 
+* 2015-05-05    v1.0.0    Updating dependencies and better file configuration
 * 2014-08-23    v0.1.2    Dependencies update and general code quality
 * 2013-12-20    v0.1.1    Linting with eslint instead of JSHint for better coverage
 * 2013-07-23    v0.1.0    Initial release

@@ -11,34 +11,40 @@ module.exports = function html2md(grunt) {
 
   grunt.registerMultiTask('html2md', 'Transform HTML files to Markdown', function register() {
 
-    var toMarkdown = require('to-markdown').toMarkdown;
+    var toMarkdown = require('to-markdown');
     var options = this.options({
-      encoding: 'utf8'
+      gfm: false
     });
 
     // Iterate over all specified file groups.
-    this.filesSrc.forEach(function filesEach(filepath) {
+    this.files.forEach(function filesEach(f) {
 
-      // Warn on and remove invalid source files (if no null was set).
-      if (!grunt.file.exists(filepath) || !grunt.file.isFile(filepath)) {
-        grunt.log.warn('Source file "' + filepath + '" not found.');
-      }
-      else {
-        // Read file source.
-        var html = grunt.file.read(filepath);
+      f.src.forEach(function (filepath) {
 
-        // Convert
-        var md = toMarkdown(html);
+        // Warn on and remove invalid source files (if no null was set).
+        if (!grunt.file.exists(filepath) || !grunt.file.isFile(filepath)) {
+          grunt.log.warn('Source file "' + filepath + '" not found.');
+        }
+        else {
+          // Read file source.
+          var html = grunt.file.read(filepath);
 
-        // Replace suffix of source to create destination
-        var dest = filepath.substring(0, filepath.lastIndexOf('.')) + '.md';
+          // Convert
+          var md = toMarkdown(html, options);
 
-        // Write the destination file.
-        grunt.file.write(dest, md, options);
+          // Replace suffix of source to create destination
+          var dest = f.dest;
+          if (!dest) {
+            dest = filepath.substring(0, filepath.lastIndexOf('.')) + '.md';
+          }
 
-        // Print a success message.
-        grunt.log.writeln('File "' + dest + '" created.');
-      }
+          // Write the destination file.
+          grunt.file.write(dest, md, 'utf8');
+
+          // Print a success message.
+          grunt.log.writeln('File "' + dest + '" created.');
+        }
+      });
     });
   });
 

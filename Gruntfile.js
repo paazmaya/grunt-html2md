@@ -32,11 +32,16 @@ module.exports = function gruntConf(grunt) {
     html2md: {
       main: {
         options: {
-          encoding: 'ascii'
+          gfm: true
         },
         src: [
           'test/fixtures/default.html'
         ]
+      },
+      another: {
+        files: {
+          'test/fixtures/another.md': 'test/fixtures/default.html'
+        }
       }
     },
 
