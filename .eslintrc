@@ -1,7 +1,8 @@
 {
   "rules": {
+    "array-bracket-spacing": 2,
     "block-scoped-var": 0,
-    "brace-style": ["2", "stroustrup"],
+    "brace-style": [2, "stroustrup"],
     "camelcase": 0,
     "complexity": [0, 12],
     "consistent-return": 2,
