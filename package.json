@@ -5,8 +5,8 @@
   "homepage": "https://github.com/paazmaya/grunt-html2md",
   "author": {
     "name": "Juga Paazmaya",
-    "email": "olavic@gmail.com",
-    "url": "http://paazmaya.com"
+    "email": "paazmaya@yahoo.com",
+    "url": "http://paazmaya.divshot.io"
   },
   "repository": {
     "type": "git",
@@ -15,14 +15,9 @@
   "bugs": {
     "url": "https://github.com/paazmaya/grunt-html2md/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/paazmaya/grunt-html2md/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "files": [
-    "LICENSE-MIT",
+    "LICENSE",
     "tasks",
     "README.md"
   ],
@@ -35,11 +30,11 @@
   },
   "dependencies": {
     "grunt": "~0.4",
-    "to-markdown": "~1.2"
+    "to-markdown": "~2.0"
   },
   "devDependencies": {
     "grunt-cli": "~0.1",
-    "grunt-eslint": "~17.1",
+    "grunt-eslint": "~17.2",
     "grunt-contrib-clean": "~0.6",
     "grunt-contrib-nodeunit": "~0.4",
     "jit-grunt": "~0.9",
