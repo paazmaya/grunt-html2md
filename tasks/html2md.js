@@ -19,7 +19,7 @@ module.exports = function html2md(grunt) {
     // Iterate over all specified file groups.
     this.files.forEach(function filesEach(f) {
 
-      f.src.forEach(function (filepath) {
+      f.src.forEach(function eachSrc(filepath) {
 
         // Warn on and remove invalid source files (if no null was set).
         if (!grunt.file.exists(filepath) || !grunt.file.isFile(filepath)) {
