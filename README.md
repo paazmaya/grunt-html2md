@@ -114,7 +114,7 @@ npm install -g venus
 
 ## License
 
-Copyright (c) Juga Paazmaya <olavic@gmail.com>
+Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
 
-Licensed under the [MIT license](LICENSE-MIT).
+Licensed under the [MIT license](LICENSE).
 

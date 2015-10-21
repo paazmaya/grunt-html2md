@@ -6,7 +6,7 @@
   "author": {
     "name": "Juga Paazmaya",
     "email": "paazmaya@yahoo.com",
-    "url": "http://paazmaya.divshot.io"
+    "url": "http://paazmaya.fi"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=4.2.0"
   },
   "scripts": {
     "test": "grunt test"
