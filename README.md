@@ -14,7 +14,8 @@
 This Grunt task plugin transforms the given HTML files to the
 [Markdown format](http://daringfireball.net/projects/markdown/).
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4`, Node.js minimum of `4.2.0` and
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4` and [Node.js](https://nodejs.org/en/)
+version to be minimum of `4.2.0`, which is the Long Term Support (LTS) version, and
 handles the transformation via
 [HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~2.0`.
 
