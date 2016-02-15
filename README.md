@@ -108,10 +108,17 @@ npm install -g venus
 
 ## Version history
 
-* `v1.0.0` (2015-05-05) Updating dependencies and better file configuration
-* `v0.1.2` (2014-08-23) Dependencies update and general code quality
-* `v0.1.1` (2013-12-20) Linting with eslint instead of JSHint for better coverage
-* `v0.1.0` (2013-07-23) Initial release
+* `v1.1.0` (2016-02-15)
+  - Updating dependencies
+  - Minimum Node.js version supported is `4.2.0` (LTS)
+* `v1.0.0` (2015-05-05)
+  - Updating dependencies and better file configuration
+* `v0.1.2` (2014-08-23)
+  - Dependencies update and general code quality
+* `v0.1.1` (2013-12-20)
+  - Linting with eslint instead of JSHint for better coverage
+* `v0.1.0` (2013-07-23)
+  - Initial release
 
 
 ## License
