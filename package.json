@@ -30,11 +30,11 @@
     "lint": "grunt eslint"
   },
   "dependencies": {
-    "to-markdown": "~2.0"
+    "to-markdown": "~3.0"
   },
   "devDependencies": {
     "grunt": "~1.0",
-    "grunt-eslint": "~18.0",
+    "grunt-eslint": "~18.1",
     "grunt-contrib-clean": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
     "jit-grunt": "~0.10",
