@@ -14,10 +14,10 @@
 This Grunt task plugin transforms the given HTML files to the
 [Markdown format](http://daringfireball.net/projects/markdown/).
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4` and [Node.js](https://nodejs.org/en/)
+This plugin requires [Grunt](http://gruntjs.com/) `~1.0` and [Node.js](https://nodejs.org/en/)
 version to be minimum of `4.2.0`, which is the Long Term Support (LTS) version, and
 handles the transformation via
-[HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~2.0`.
+[HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~3.0`.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the
 [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to
@@ -108,6 +108,8 @@ npm install -g venus
 
 ## Version history
 
+* `v1.2.0` (2016-05-07)
+  - Updating dependencies. Have you noticed it is now Grunt.js v1.0.0?
 * `v1.1.0` (2016-02-15)
   - Updating dependencies
   - Minimum Node.js version supported is `4.2.0` (LTS)

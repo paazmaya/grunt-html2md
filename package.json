@@ -1,7 +1,7 @@
 {
   "name": "grunt-html2md",
   "description": "Transform HTML files to Markdown in a Grunt task",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "https://github.com/paazmaya/grunt-html2md",
   "author": {
     "name": "Juga Paazmaya",
