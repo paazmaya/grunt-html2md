@@ -35,7 +35,7 @@
   "devDependencies": {
     "eslint-config-paazmaya": "^2.1.0",
     "grunt": "~1.0",
-    "grunt-eslint": "~18.1",
+    "grunt-eslint": "~19.0",
     "grunt-contrib-clean": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
     "jit-grunt": "~0.10",
