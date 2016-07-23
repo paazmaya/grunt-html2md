@@ -7,43 +7,48 @@
  */
 'use strict';
 
+const toMarkdown = require('to-markdown');
+
 module.exports = function html2md(grunt) {
+
+  const filterSrc = function filterSrc(filepath) {
+    // Warn on and remove invalid source files (if no null was set).
+    if (!grunt.file.exists(filepath) || !grunt.file.isFile(filepath)) {
+      grunt.log.warn('Source file "' + filepath + '" not found.');
+      return false;
+    }
+    return true;
+  };
 
   grunt.registerMultiTask('html2md', 'Transform HTML files to Markdown', function register() {
 
-    var toMarkdown = require('to-markdown');
-    var options = this.options({
+    const options = this.options({
       gfm: false
     });
 
     // Iterate over all specified file groups.
-    this.files.forEach(function filesEach(f) {
+    this.files.forEach(function filesEach(files) {
 
-      f.src.forEach(function eachSrc(filepath) {
+      files.src.filter(filterSrc).forEach(function eachSrc(filepath) {
 
-        // Warn on and remove invalid source files (if no null was set).
-        if (!grunt.file.exists(filepath) || !grunt.file.isFile(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
+        // Read file source.
+        const html = grunt.file.read(filepath);
+
+        // Convert
+        const md = toMarkdown(html, options);
+
+        // Replace suffix of source to create destination
+        let dest = files.dest;
+        if (!dest) {
+          dest = filepath.substring(0, filepath.lastIndexOf('.')) + '.md';
         }
-        else {
-          // Read file source.
-          var html = grunt.file.read(filepath);
 
-          // Convert
-          var md = toMarkdown(html, options);
+        // Write the destination file.
+        grunt.file.write(dest, md, 'utf8');
 
-          // Replace suffix of source to create destination
-          var dest = f.dest;
-          if (!dest) {
-            dest = filepath.substring(0, filepath.lastIndexOf('.')) + '.md';
-          }
+        // Print a success message.
+        grunt.log.writeln('File "' + dest + '" created.');
 
-          // Write the destination file.
-          grunt.file.write(dest, md, 'utf8');
-
-          // Print a success message.
-          grunt.log.writeln('File "' + dest + '" created.');
-        }
       });
     });
   });

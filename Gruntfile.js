@@ -9,6 +9,7 @@
 
 module.exports = function gruntConf(grunt) {
   require('time-grunt')(grunt); // Must be first item
+  require('jit-grunt')(grunt);
 
   // Project configuration.
   grunt.initConfig({
@@ -54,9 +55,6 @@ module.exports = function gruntConf(grunt) {
 
   grunt.loadTasks('tasks');
 
-  require('jit-grunt')(grunt);
-
   grunt.registerTask('test', ['clean', 'eslint', 'html2md', 'nodeunit']);
-
   grunt.registerTask('default', ['test']);
 };

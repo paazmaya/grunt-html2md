@@ -1,6 +1,13 @@
+/**
+ * grunt-html2md
+ * https://github.com/paazmaya/grunt-html2md
+ *
+ * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)
+ * Licensed under the MIT license.
+ */
 'use strict';
 
-var grunt = require('grunt');
+const grunt = require('grunt');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -29,8 +36,8 @@ exports.html2md = {
   main: function main(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('test/fixtures/default.md');
-    var expected = grunt.file.read('test/expected/default.md');
+    const actual = grunt.file.read('test/fixtures/default.md');
+    const expected = grunt.file.read('test/expected/default.md');
     test.equal(actual, expected, 'simple conversion');
 
     test.done();
