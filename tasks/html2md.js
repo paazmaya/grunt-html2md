@@ -20,6 +20,10 @@ module.exports = function html2md(grunt) {
     return true;
   };
 
+  const fileOpts = {
+    encoding: 'utf8'
+  };
+
   grunt.registerMultiTask('html2md', 'Transform HTML files to Markdown', function register() {
 
     const options = this.options({
@@ -32,19 +36,21 @@ module.exports = function html2md(grunt) {
       files.src.filter(filterSrc).forEach(function eachSrc(filepath) {
 
         // Read file source.
-        const html = grunt.file.read(filepath);
+        const html = grunt.file.read(filepath, fileOpts);
 
         // Convert
         const md = toMarkdown(html, options);
 
         // Replace suffix of source to create destination
         let dest = files.dest;
-        if (!dest) {
+
+        if (typeof dest !== 'string') {
+          // Assume that destination to be written next to source
           dest = filepath.substring(0, filepath.lastIndexOf('.')) + '.md';
         }
 
         // Write the destination file.
-        grunt.file.write(dest, md, 'utf8');
+        grunt.file.write(dest, md, fileOpts);
 
         // Print a success message.
         grunt.log.writeln('File "' + dest + '" created.');

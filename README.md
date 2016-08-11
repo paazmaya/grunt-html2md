@@ -103,16 +103,16 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 Unit tests are done with [Nodeunit](https://github.com/caolan/nodeunit/ "Easy unit testing in node.js and the browser, based on the assert module").
 
 ```sh
-npm install -g venus
+npm install
+npm run lint
+npm test
 ```
 
 ## Version history
 
-* `v1.3.0` (2016-08-11)
-  - Dependencies are sure :tophat: up to date
-  - Use ESLint directly without the Grunt.js plugin
-* `v1.2.0` (2016-05-07)
+* `v1.2.0` (2016-08-11)
   - Updating dependencies. Have you noticed it is now Grunt.js v1.0.0?
+  - Use ESLint directly without the Grunt.js plugin
 * `v1.1.0` (2016-02-15)
   - Updating dependencies
   - Minimum Node.js version supported is `4.2.0` (LTS)
