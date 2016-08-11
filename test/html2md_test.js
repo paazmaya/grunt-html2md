@@ -38,6 +38,15 @@ exports.html2md = {
 
     const actual = grunt.file.read('test/fixtures/default.md');
     const expected = grunt.file.read('test/expected/default.md');
+    test.equal(actual, expected, 'gfm conversion');
+
+    test.done();
+  },
+  another: function main(test) {
+    test.expect(1);
+
+    const actual = grunt.file.read('test/fixtures/another.md');
+    const expected = grunt.file.read('test/expected/default.md');
     test.equal(actual, expected, 'simple conversion');
 
     test.done();
