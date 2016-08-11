@@ -27,15 +27,15 @@
   },
   "scripts": {
     "test": "grunt test",
-    "lint": "grunt eslint"
+    "lint": "eslint -c .eslintrc.json Gruntfile.js tasks test"
   },
   "dependencies": {
     "to-markdown": "~3.0"
   },
   "devDependencies": {
+    "eslint": "^3.2.2",
     "eslint-config-paazmaya": "^2.3.1",
     "grunt": "~1.0",
-    "grunt-eslint": "~19.0",
     "grunt-contrib-clean": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
     "jit-grunt": "~0.10",

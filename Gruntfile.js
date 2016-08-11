@@ -13,17 +13,6 @@ module.exports = function gruntConf(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    eslint: {
-      options: {
-        config: '.eslintrc.json'
-      },
-      target: [
-        'Gruntfile.js',
-        'tasks/*.js',
-        '<%= nodeunit.tests %>'
-      ]
-    },
-
     // Before generating any new files, remove any previously-created files.
     clean: {
       tests: ['test/fixtures/*.md']
@@ -55,6 +44,6 @@ module.exports = function gruntConf(grunt) {
 
   grunt.loadTasks('tasks');
 
-  grunt.registerTask('test', ['clean', 'eslint', 'html2md', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'html2md', 'nodeunit']);
   grunt.registerTask('default', ['test']);
 };

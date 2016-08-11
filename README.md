@@ -108,6 +108,9 @@ npm install -g venus
 
 ## Version history
 
+* `v1.3.0` (2016-08-11)
+  - Dependencies are sure :tophat: up to date
+  - Use ESLint directly without the Grunt.js plugin
 * `v1.2.0` (2016-05-07)
   - Updating dependencies. Have you noticed it is now Grunt.js v1.0.0?
 * `v1.1.0` (2016-02-15)
