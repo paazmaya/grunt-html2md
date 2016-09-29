@@ -5,6 +5,7 @@
  * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)
  * Licensed under the MIT license.
  */
+
 'use strict';
 
 const toMarkdown = require('to-markdown');
@@ -15,8 +16,10 @@ module.exports = function html2md(grunt) {
     // Warn on and remove invalid source files (if no null was set).
     if (!grunt.file.exists(filepath) || !grunt.file.isFile(filepath)) {
       grunt.log.warn('Source file "' + filepath + '" not found.');
+
       return false;
     }
+
     return true;
   };
 
