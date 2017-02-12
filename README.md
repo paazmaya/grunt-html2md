@@ -15,7 +15,7 @@ This Grunt task plugin transforms the given HTML files to the
 [Markdown format](http://daringfireball.net/projects/markdown/).
 
 This plugin requires [Grunt](http://gruntjs.com/) `~1.0` and [Node.js](https://nodejs.org/en/)
-version to be minimum of `4.2.0`, which is the Long Term Support (LTS) version, and
+version to be minimum of `6.9.5`, which is the Long Term Support (LTS) version, and
 handles the transformation via
 [HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~3.0`.
 
@@ -111,6 +111,8 @@ npm test
 
 ## Version history
 
+* `v2.0.0` (2017)
+  - Minimum supported Node.js version is now `6.9.5` (LTS)
 * `v1.2.0` (2016-08-11)
   - Updating dependencies. Have you noticed it is now Grunt.js v1.0.0?
   - Use ESLint directly without the Grunt.js plugin
@@ -132,4 +134,3 @@ npm test
 Copyright (c) [Juga Paazmaya](https://paazmaya.fi) <paazmaya@yahoo.com>
 
 Licensed under the [MIT license](LICENSE).
-
