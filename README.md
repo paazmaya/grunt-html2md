@@ -111,8 +111,9 @@ npm test
 
 ## Version history
 
-* `v2.0.0` (2017)
-  - Minimum supported Node.js version is now `6.9.5` (LTS)
+* `v2.0.0` (2017-07)
+  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
+  - `main` property in `package.json` was pointing to a wrong file
 * `v1.2.0` (2016-08-11)
   - Updating dependencies. Have you noticed it is now Grunt.js v1.0.0?
   - Use ESLint directly without the Grunt.js plugin

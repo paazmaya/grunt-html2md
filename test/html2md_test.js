@@ -43,7 +43,7 @@ exports.html2md = {
 
     test.done();
   },
-  another: function main(test) {
+  another: function another(test) {
     test.expect(1);
 
     const actual = grunt.file.read('test/fixtures/another.md');

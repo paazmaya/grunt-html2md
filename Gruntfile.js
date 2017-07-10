@@ -25,9 +25,7 @@ module.exports = function gruntConf(grunt) {
         options: {
           gfm: true
         },
-        src: [
-          'test/fixtures/default.html'
-        ]
+        src: ['test/fixtures/default.html']
       },
       another: {
         files: {
