@@ -23,7 +23,7 @@
   ],
   "main": "tasks/html2md.js",
   "engines": {
-    "node": ">=6.9.5"
+    "node": ">=8.11.1"
   },
   "scripts": {
     "test": "grunt test",
