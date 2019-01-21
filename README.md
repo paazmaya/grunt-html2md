@@ -111,8 +111,8 @@ npm test
 
 ## Version history
 
-* `v2.0.0` (2017-07)
-  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
+* `v2.0.0` (2019-01-22)
+  - Minimum Node.js version lifted from `4.2.0` to `8.11.1`
   - `main` property in `package.json` was pointing to a wrong file
 * `v1.2.0` (2016-08-11)
   - Updating dependencies. Have you noticed it is now Grunt.js v1.0.0?
