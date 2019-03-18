@@ -33,7 +33,7 @@
     "to-markdown": "~3.1"
   },
   "devDependencies": {
-    "eslint": "5.15.2",
+    "eslint": "5.15.3",
     "eslint-config-paazmaya": "5.2.0",
     "grunt": "1.0.3",
     "grunt-contrib-clean": "2.0.0",
