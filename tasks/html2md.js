@@ -6,7 +6,6 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
 
 const toMarkdown = require('to-markdown');
 
@@ -45,7 +44,9 @@ module.exports = function html2md(grunt) {
         const md = toMarkdown(html, options);
 
         // Replace suffix of source to create destination
-        let dest = files.dest;
+        let {
+          dest
+        } = files;
 
         if (typeof dest !== 'string') {
           // Assume that destination to be written next to source
