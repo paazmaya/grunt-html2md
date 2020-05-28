@@ -6,7 +6,6 @@
 [![Code Climate](https://img.shields.io/codeclimate/github/paazmaya/grunt-html2md.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-html2md)
 [![dependencies Status](https://david-dm.org/paazmaya/grunt-html2md/status.svg)](https://david-dm.org/paazmaya/grunt-html2md)
 [![Built with Grunt](http://img.shields.io/badge/Grunt-1.0-blue.svg?style=flat-square)](http://gruntjs.com/)
-[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-html2md/index?flat)](https://github.com/igrigorik/ga-beacon)
 
 
 ## Getting Started
