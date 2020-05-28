@@ -33,16 +33,16 @@
     "to-markdown": "~3.1"
   },
   "devDependencies": {
-    "eslint": "5.16.0",
-    "eslint-config-paazmaya": "5.3.0",
+    "eslint": "7.1.0",
+    "eslint-config-paazmaya": "7.0.0",
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "2.0.0",
-    "grunt-contrib-nodeunit": "2.0.0",
+    "grunt-contrib-nodeunit": "2.1.0",
     "jit-grunt": "0.10.0",
     "time-grunt": "2.0.0"
   },
   "peerDependencies": {
-    "grunt": "~1.0"
+    "grunt": "~1.1"
   },
   "keywords": [
     "html",

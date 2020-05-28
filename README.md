@@ -15,7 +15,7 @@ This Grunt task plugin transforms the given HTML files to the
 [Markdown format](http://daringfireball.net/projects/markdown/).
 
 This plugin requires [Grunt](http://gruntjs.com/) `~1.0` and [Node.js](https://nodejs.org/en/)
-version to be minimum of `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule), and
+version to be minimum of `10.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule), and
 handles the transformation via
 [HTML to Markdown converter](https://github.com/domchristie/to-markdown) `~3.0`.
 
@@ -111,6 +111,8 @@ npm test
 
 ## Version history
 
+  - Run tests also against Node.js version 14. Now versions 10, 12, and 14 of Node.js are covered at Travis CI
+  - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
 * `v2.0.0` (2019-01-22)
   - Minimum Node.js version lifted from `4.2.0` to `8.11.1`
   - `main` property in `package.json` was pointing to a wrong file
