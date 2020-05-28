@@ -1,4 +1,6 @@
-sudo: false
+# https://docs.travis-ci.com/user/build-config-validation/
+version: ~> 1.0
+
 language: node_js
 node_js:
   - "10"
@@ -9,5 +11,5 @@ script:
 cache:
   directories:
     - node_modules
-matrix:
+jobs:
   fast_finish: true
