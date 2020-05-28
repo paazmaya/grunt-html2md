@@ -9,8 +9,5 @@ node_js:
 script:
   - npm run lint
   - npm test
-cache:
-  directories:
-    - node_modules
 jobs:
   fast_finish: true
