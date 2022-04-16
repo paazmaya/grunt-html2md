@@ -4,7 +4,7 @@
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-html2md.svg?style=flat-square)](https://app.travis-ci.com/paazmaya/grunt-html2md)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c00d6df47e1679798a98/maintainability)](https://codeclimate.com/github/paazmaya/grunt-html2md/maintainability)
-[![dependencies Status](https://david-dm.org/paazmaya/grunt-html2md/status.svg)](https://david-dm.org/paazmaya/grunt-html2md)
+
 [![Built with Grunt](http://img.shields.io/badge/Grunt-1.0-blue.svg?style=flat-square)](http://gruntjs.com/)
 
 
